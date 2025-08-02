@@ -1,0 +1,46 @@
+Voting Application
+
+1. Clear Your Projects What ?
+A functionality where user can give vote to the given set of candidates
+
+Models?
+Routes?
+
+voting app functionality
+
+1. user sign in / sign up
+2. see the list of candidates
+3. only one vote can give user to any candidate
+4. there is a route which shows the list of candidates and their live vote counts sorted by their vote count
+5. user data must contain their one unique goverment id proof named : aadhar card number
+6. there should be one admin who can only mantain the table of candidates and he can't able to vote at all
+7. user can change their password
+8. user can login only with aadhar card number and password.
+9. admin can't vote at all.
+----------------------------------***--------------------------------
+
+Routes - 
+
+    1. USER AUTHENTICATION: 
+        -> /sign up: POST - create a new user account
+        -> /sign in or /log in: POST - log in to an existing account. [aadhar card number + password]
+    
+    2. VOTING:
+        -> /candidates: GET - Get the list of candidates
+        -> /vote/candidateId: POST - vote for a specific candidate.
+
+    3. VOTE COUNTS:
+        -> /vote/counts: GET - get the list of candidates sorted by their vote counts.    
+    
+    4. USER PROFILE:
+        -> /profile: GET - Get the user's profile information
+        -> /profile/password: PUT - user's change our password
+
+    5. ADMIN CANDIDATE MANAGEMENT:
+        -> /candidates: POST - create a new candidate
+        -> /candidates/candidateId: PUT - update an existing candidate
+        -> /candidates/candidateId: DELETE - delete a candidate from the list
+    
+
+        
+         
